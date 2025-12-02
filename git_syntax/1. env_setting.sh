@@ -23,7 +23,22 @@ git config --list
 # git프로젝트 생성방법2가지 
 # 1. 원격에서 repo 생성 후 clone
 # 2. 로컬에 이미 만들어진 프로젝트 github에 업로드 
-# 2-1) .gi폴더를 생성
+# 2-1) .git폴더를 생성
 git init
 # 2-2) 원격지 주소를 추가
 git remote add origin 원격지주소
+
+# 다른 repo에서 clone을 받아 나의 repo로 올리기
+# 1. 커밋이력 그대로 가져가기 : test1
+git clone
+cd .\KAFKA-PRACTICE\
+git remote set-url origin 내레포주소 # 원격지 주소(url) 변경
+git branch  # branch가 main이 맞는지 확인
+git push origin main # add, commit은 할필요없음(이미 commit 되어있고, 이후 수정한거 없음)
+
+# 2. 커밋이력 없이 가져가기 : test2
+# .git 폴더 삭제
+git init
+git remote set-url origin 내레포주소
+git checkout -b main #main브랜치 생성 및 변경
+# git add, commit, push 작업 진행 
