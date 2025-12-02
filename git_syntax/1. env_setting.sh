@@ -42,3 +42,8 @@ git init
 git remote set-url origin 내레포주소
 git checkout -b main #main브랜치 생성 및 변경
 # git add, commit, push 작업 진행 
+
+# .gitignore파일은 git추적목록에서 제외 대상 나열
+# 주로, 빌드된 파일 또는 중요암호 등이 담긴 파일을 제외한다
+# 만약 이미 git에서 추적되고 있는 파일을 제외하려면 캐시 삭제 필요
+git rm -r --cached .
