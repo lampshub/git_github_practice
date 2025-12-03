@@ -1,4 +1,4 @@
-환경설정 
+# 환경설정 
 
 # .은 모든 변경사항을 의미. 특정 파일만 add하는 것도 가능
 # add는 staging area로 변경사항을 이동
@@ -40,7 +40,7 @@ git push origin main # add, commit은 할필요없음(이미 commit 되어있고
 # .git 폴더 삭제
 git init
 git remote set-url origin 내레포주소
-git checkout -b main #main브랜치 생성 및 변경
+git checkout -b main # main브랜치 생성 및 변경
 # git add, commit, push 작업 진행 
 
 # .gitignore파일은 git추적목록에서 제외 대상 나열
