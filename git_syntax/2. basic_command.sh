@@ -47,3 +47,12 @@ git reset head^
 # 기존 commit된 사항은 지워지는게 아님 
 git revert 커밋ID
 
+# 작업중인 사항을 임시저장
+git stash
+# 임시저장한 작업사항을 다시 적용
+git stash pop
+# 작업사항을 순차적으로 쌓고(0->1->2->...) 마지막에 쌓인것부터 pop됨(4->3->2->...)
+# 저장한 작업목록 조회
+git stash list
+# 저장한 목록 전체삭제
+git stash clear
