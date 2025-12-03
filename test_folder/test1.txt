@@ -1,17 +1,10 @@
 hello world1
 hello world2
 hello world3
-
 hello world3
-hello world3
-hello world3
-hello world3
-
-hello world9
 hello world9
 hello world9
 hello world7
-
 hello world8
 hello world9
 hello world10
